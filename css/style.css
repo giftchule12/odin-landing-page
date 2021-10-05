@@ -3,28 +3,48 @@ header{
     flex-direction: row;
     align-items: center;
     align-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 header, footer, .r1{
     background-color: #1F2937;
-    padding: 0 20% 0 20%;
+    padding-left: 14%;
+    padding-right: 14%;
 }
 
 .header-logo{
     font-size: 24px;
     color: #F9FAF8;
+    flex-grow: 1;
 }
 
-.header-links, .r1 p, footer{
+.header-links, .hero-para, footer{
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.header-links{
+    display: flex;
+    gap: 20px;
+    padding-top: 5px;
+    /* flex-grow: 0; */
+}
+
+a, a:hover, a:visited, a:hover{
+    color: #E5E7EB;
+    text-decoration: none;
 }
 
 .r1{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
-.r1 h2{
+.hero-text{
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
@@ -37,43 +57,81 @@ header, footer, .r1{
     border-radius: 5px;
     padding: 5px 30px 5px 30px
 }
-
-.placeholder{
-    background-color: gray;
-    text-align: center;
-    margin: 10px 20px 20px 300px ;
+.r1-item-1{
+    flex-basis: 45%;
+    /* flex-shrink: 0; */
 }
 
+.r1-item-2{
+    flex-basis: 60%;
+    /* flex-grow: 0; */
+    /* flex-basis: 100%; */
+    background-color:#6D747D;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
 .r2{
-    padding: 0 20% 0 20%;
+    padding: 0 20% 100px 20%;
 }
 .r2 h2{
     font-size: 36px;
     font-weight: 800;
+    text-align: center;
     color: #1F2937;
+}
+
+.r2-images{
+    display: flex;
+    gap: 55px;
+}
+
+.r2 p{
+    padding: 0px 5px 0 5px ;
+    text-align: center;
+}
+
+.image{
+    border-style: solid;
+    border-width: 4px;
+    border-color: #3882F6;
+    border-radius: 20px;
+    padding: 165px 0 0 0;
 }
 
 .r3{
     background-color: #E5E7EB;
-    padding: 0 20% 0 20%;
+    padding: 80px 20% 80px 20%;
 }
 
 .r3 p{
     font-size: 36px;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 200;
     color: #1F2937;
 }
 
 .r4{
-    margin: 0 20% 0 20%;
-    padding: 40px 0 40px 0;
+    margin: 0 14% 0 14%;
+    padding: 80px 0 80px 0;
 }
 
 .r4-background{
     background-color: #3882F6;
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
+}
+
+.r4 h3{
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.r4 p{
+    color: #F9FAF8;
+    font-size: 18px;
 }
 
 .r4 button{
