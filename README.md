@@ -1,2 +1,2 @@
 # odin-landing-page
-The project is meant for practicing purpose only.
+The project is meant for practice purpose only.
